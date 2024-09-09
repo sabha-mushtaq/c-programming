@@ -1,36 +1,17 @@
-// Check whether a number is prime or not
+// Display the series: 2 4 8 16 32 64 128 ....... (n terms)
 #include<stdio.h>
-int main(){
-int n,i,isPrime =1;
+int main (){
+int n ,i,term=2;
 printf("enter n \n");
 scanf("%d",&n);
-if (n<=0)
+for ( i = 1; i <=n; i++)
 {
-   printf("%d is not prime \n",n);
-   return 0;
+    printf("%d \n",term);
+    term = term *2;
 }
-for ( i = 2; i < n/2; i++)
-{
-    if (n % i == 0)
-    {
-        isPrime = 0;
-        break;
-    }
-    
-}
-if (isPrime)
-{
-    printf("%d is prime \n",n);
-}else
-{
-    printf("%d is not prime \n",n);
-}
-
-
-
-
-
 
 
 return 0;
+
+
 }
